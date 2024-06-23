@@ -2,3 +2,7 @@ pycryptodome
 lxml
 requests
 ddddocr
+numpy<2
+NJUlogin
+python-dotenv
+matplotlib

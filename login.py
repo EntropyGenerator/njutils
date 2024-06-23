@@ -66,7 +66,7 @@ def login(username,password,captcha_callback=do_captcha):
         "_eventId":eventid,
         "rmShown":rmshown
     }
-    login_response=requests.post("https://authserver.nju.edu.cn/authserver/login",cookies=cookies,data=data,allow_redirects=False,headers=headers)
+    login_response=requests.post("https://authserver.nju.edu.cn/authserver/index.do",cookies=cookies,data=data,allow_redirects=False,headers=headers)
     return login_response
 
 
