@@ -1,6 +1,6 @@
 import requests
-from Cryptodome.Cipher import AES
-from Cryptodome.Util import Padding
+from Crypto.Cipher import AES
+from Crypto.Util import Padding
 from lxml import etree
 import base64
 '''

@@ -1,0 +1,4 @@
+pycryptodome
+lxml
+requests
+ddddocr
