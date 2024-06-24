@@ -23,8 +23,8 @@ def draw_elec_degree():
     plt.plot([i[1] for i in elec_history],[i[0] for i in elec_history])
     plt.title("Dormitory Electricity Tracer")
     plt.xticks(ticks=list(range(0,len(elec_history),10)),rotation=90)
-    for item in elec_history:
-        plt.text(item[1],item[0],item[0])
+    for i in range(0,len(elec_history),10):
+        plt.text(elec_history[i][1],elec_history[i][0],elec_history[i][0],va="top",ha="right",rotation=75)
     plt.tight_layout()
     plt.savefig(result_pic_name)
 
