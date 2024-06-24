@@ -19,7 +19,7 @@ def draw_elec_degree():
     elec_degree=get_elec_degree()
     elec_history.append([elec_degree,f"{t.tm_mon}-{t.tm_mday} {t.tm_hour}:{t.tm_min}"])
     
-    print(f"Successfully fetched elec info: {elec_degree} degrees.")
+    print(f"[{t.tm_mon}-{t.tm_mday} {t.tm_hour}:{t.tm_min}]Successfully fetched elec info: {elec_degree} degrees.")
 
     plt.figure(figsize=(10,3))
     plt.style.use("ggplot")
