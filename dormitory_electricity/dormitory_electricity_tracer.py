@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 history_file_name="history.json"
 result_pic_name="result.png"
+elec_fee=1.824
 
 def draw_elec_degree():
     elec_history=None
@@ -18,6 +19,7 @@ def draw_elec_degree():
     
     elec_degree=get_elec_degree()
     if elec_degree != None:
+        elec_degree*=elec_fee
         elec_history.append([elec_degree,f"{t.tm_mon}-{t.tm_mday} {t.tm_hour}:{t.tm_min}"])
         print(f"[{t.tm_mon}-{t.tm_mday} {t.tm_hour}:{t.tm_min}]Successfully fetched elec info: {elec_degree} degrees.")
     else:
