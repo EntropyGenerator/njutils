@@ -20,7 +20,7 @@ def draw_elec_degree():
     
     elec_degree=get_elec_degree()
     if elec_degree != None:
-        elec_degree=format(elec_degree*elec_fee,".2f")
+        elec_degree=float(format(elec_degree*elec_fee,".2f"))
         elec_diff=0
         if len(elec_history)>1:
             elec_diff=elec_history[-2][1]-elec_history[-1][1]
